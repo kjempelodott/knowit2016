@@ -14,7 +14,7 @@ fn main() {
             println!("Player {} wins. Result: {}", j + 1, n*(j + 1));
             break
         }
-        if pos <= 90 {
+        if pos < 90 {
             match ladders.get(&pos) {
                 Some(&b) => { n += 1; players[j] = b; },
                 None => { players[j] = pos; },
